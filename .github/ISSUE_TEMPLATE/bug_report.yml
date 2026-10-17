@@ -1,0 +1,76 @@
+name: Bug report
+description: Report a bug in a PWR Industries app (you can also use https://www.pwr.industries/bugs)
+title: "Bug: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Never include passwords, enable secrets, SNMP communities, keys or full device configs.**"
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Octet TFTP Lite
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: Octet menu → About Octet
+      placeholder: "1.0.2"
+    validations:
+      required: true
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      description: Apple menu → About This Mac
+      placeholder: "e.g. 15.1 Sequoia"
+    validations:
+      required: true
+  - type: dropdown
+    id: mac_type
+    attributes:
+      label: Mac type
+      options:
+        - Apple silicon (M1)
+        - Apple silicon (M2)
+        - Apple silicon (M3)
+        - Apple silicon (M4)
+        - Apple silicon (other / not sure)
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One line, what went wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open Octet\n2. Set root folder to …\n3. Start server and copy from switch …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include any error text.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots (optional)
+      description: Remove usernames, IPs and configs you don't want to share.
