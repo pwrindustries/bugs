@@ -12,13 +12,14 @@ body:
       label: App
       options:
         - Octet TFTP Lite
+        - Veilrunner
     validations:
       required: true
   - type: input
     id: app_version
     attributes:
       label: App version
-      description: Octet menu → About Octet
+      description: App menu → About (e.g. Octet → About Octet, Veilrunner → About Veilrunner)
       placeholder: "1.0.2"
     validations:
       required: true

@@ -8,6 +8,7 @@ Bug reports come in through the form at **https://www.pwr.industries/bugs**, so 
 
 Labels:
 - `octet` – Octet TFTP and Octet TFTP Lite
+- `veilrunner` – Veilrunner (Mac MUD client)
 - `bug` – confirmed or reported bug
 - `needs-triage` – new, not reviewed yet
 
