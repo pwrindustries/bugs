@@ -13,6 +13,7 @@ body:
       options:
         - Octet TFTP Lite
         - Veilrunner
+        - ConfigSmith
     validations:
       required: true
   - type: input
